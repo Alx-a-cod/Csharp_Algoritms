@@ -9,7 +9,7 @@
 
 // ======================================================
 
-namespace AlgorithmsLibrary.Sorting
+namespace AlgorithmsLibrary.SortTests
 
 {
     public static class MergeSort

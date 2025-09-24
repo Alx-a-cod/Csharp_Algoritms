@@ -10,7 +10,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.Sorting
+namespace AlgorithmsLibrary.SearchTests
 {
     public static class CountingSort
     {

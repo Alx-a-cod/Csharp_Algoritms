@@ -1,5 +1,4 @@
 ﻿// ======================================================
-
 // Description:      Simple comparison-based sort.
 //                   Repeatedly steps through the array, compares adjacent items, and swaps them if they are in the wrong order.
 //                   The process is repeated until the array is sorted.
@@ -10,7 +9,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.Sorting
+namespace AlgorithmsLibrary.SortTests
 {
     public static class BubbleSort
     {

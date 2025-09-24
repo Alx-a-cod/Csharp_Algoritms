@@ -10,7 +10,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.Sorting
+namespace AlgorithmsLibrary.SortTests
 {
     public static class RadixSort
     {
@@ -37,7 +37,7 @@ namespace AlgorithmsLibrary.Sorting
 
             // Store count of occurrences for each digit
             for (int i = 0; i < n; i++) // <---- count occurrences of each digit in the current exp place
-                count[(array[i] / exp) % 10]++; // <---- extract the digit at exp place and increment its count
+                count[array[i] / exp % 10]++; // <---- extract the digit at exp place and increment its count
 
             // Convert count[i] to positions
             for (int i = 1; i < 10; i++) // <---- modify count array to hold actual positions of digits in output array
@@ -46,7 +46,7 @@ namespace AlgorithmsLibrary.Sorting
             // Build output array
             for (int i = n - 1; i >= 0; i--) // <---- stable sort: iterate from end to start
             {
-                int digit = (array[i] / exp) % 10; // <---- extract the digit at exp place
+                int digit = array[i] / exp % 10; // <---- extract the digit at exp place
                 output[count[digit] - 1] = array[i]; // <---- place the element in its correct position in output array
                 count[digit]--; // <---- decrement count for that digit
             }
