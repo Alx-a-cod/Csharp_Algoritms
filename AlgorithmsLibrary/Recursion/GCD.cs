@@ -22,7 +22,8 @@ namespace AlgorithmsLibrary.Recursion
     {
         public static int Compute(int a, int b)
         {
-            if (b == 0) return a; // Base case
+            //if (b == 0) return a; // <--- Base casem Euclidean algorithm doesn't cover negative numbers, so we assume a and b are non-negative, or...
+            if (b == 0) return Math.Abs(a); // Ensure positivity
             return Compute(b, a % b); // Recursive call
         }
     }

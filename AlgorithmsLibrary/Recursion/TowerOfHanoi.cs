@@ -25,6 +25,9 @@ namespace AlgorithmsLibrary.Recursion
         // Record moves as tuples (disk, from, to)
         public static List<(int disk, char from, char to)> Solve(int n, char source = 'A', char target = 'C', char auxiliary = 'B')
         {
+            if (n <= 0)
+                throw new ArgumentException("Number of disks must be positive", nameof(n)); // <-- check invalid input
+
             var moves = new List<(int, char, char)>(); //<---- List to store the moves
             SolveRecursive(n, source, target, auxiliary, moves); //<---- Call the recursive helper method
             return moves; // <---- Return the list of moves

@@ -22,14 +22,37 @@ namespace AlgorithmsLibrary.Recursion
 {
     public static class Power_x_n_
     {
-        public static double Compute(double x, int n) 
+        public static double Compute(double x, int n)
         {
-            if (n < 0) // <---- handle negative powers
-                return 1 / Compute(x, -n); 
+            if (n < 0) // <---- handle negative powers, nut then 0.0? Infinity --> IEEE floating point. Then:
+            {
+                //if (x == 0.0)
+                //    throw new DivideByZeroException("0 cannot be raised to a negative power."); // <--- handle division by zero for negative powers of 0.
+                //return 1.0 / Compute(x, -n);
+                if (x == 0.0)
+                    throw new DivideByZeroException("0 cannot be raised to a negative power.");
 
-            if (n == 0) return 1; // base case
+                // convert to long to avoid overflow when n == int.MinValue
+                return 1.0 / PowPositive(x, -(long)n);
+            }
+            return PowPositive(x, n);
+        }
 
-            return x * Compute(x, n - 1); // recursive call
+        //if (n == 0) return 1.0; // base case
+
+        //return x * Compute(x, n - 1); // recursive call
+
+        private static double PowPositive(double x, long n) // <---- helper method to handle positive powers using iterative approach to avoid deep recursion.
+        {
+            double result = 1.0; // <---- initialize result to 1.
+            double baseVal = x; // <---- start with the base value x.
+            while (n > 0) // <---- loop until n is reduced to 0.
+            {
+                if ((n & 1) == 1) result *= baseVal; // <---- if n is odd, multiply the result by the current base value.
+                baseVal *= baseVal; // <---- square the base value for the next iteration.
+                n >>= 1; // <---- divide n by 2 (right shift) to reduce the exponent.
+            }
+            return result; // <---- return the computed power.
         }
     }
 }
