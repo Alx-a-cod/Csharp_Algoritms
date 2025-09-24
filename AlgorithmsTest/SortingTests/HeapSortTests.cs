@@ -1,4 +1,4 @@
-﻿using AlgorithmsLibrary.SortTests;
+﻿using AlgorithmsLibrary.Sorting;
 using Xunit;
 using System;
 

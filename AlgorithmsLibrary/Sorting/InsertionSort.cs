@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 
 //Description:      Builds the sorted array one element at a time, inserting the next element into its correct position.
 //                  Very efficient for small arrays or nearly sorted data.
@@ -9,7 +17,7 @@
 
 // ====================================================== 
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class InsertionSort
     {

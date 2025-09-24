@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 //
 // Description:      Non - comparison sort for integers or strings of fixed length.
 //                   Sorts numbers digit by digit, starting from least significant digit (LSD).
@@ -10,7 +18,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class RadixSort
     {

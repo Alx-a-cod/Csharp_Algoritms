@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 
 // Description:    Divide-and-conquer sorting algorithm.
 //                 Splits array into halves, sorts each half, then merges them. 
@@ -9,7 +17,7 @@
 
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 
 {
     public static class MergeSort

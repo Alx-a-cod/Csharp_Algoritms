@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AlgorithmsLibrary.SearchTests;
+using AlgorithmsLibrary.Sorting;
 using MathNet.Numerics.Distributions;
 using Xunit;
 

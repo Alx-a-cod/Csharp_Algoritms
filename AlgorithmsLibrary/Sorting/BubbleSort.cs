@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 // Description:      Simple comparison-based sort.
 //                   Repeatedly steps through the array, compares adjacent items, and swaps them if they are in the wrong order.
 //                   The process is repeated until the array is sorted.
@@ -9,7 +17,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class BubbleSort
     {

@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 //
 // Description:       Non - comparison sort, works for integers in a known small range.
 //                    Counts occurrences of each value, then places them in sorted order.
@@ -10,7 +18,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SearchTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class CountingSort
     {

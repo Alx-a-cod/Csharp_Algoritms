@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 
 // Description :     Simple comparison-based sort.
 //                   Selects the minimum (or maximum) element and moves it to the correct position in each iteration.
@@ -10,7 +18,7 @@
 
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class SelectionSort
     {

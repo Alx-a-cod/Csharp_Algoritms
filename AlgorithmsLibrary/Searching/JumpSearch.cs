@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Searching;
+using Xunit;
+
+// ======================================================
 // Description:      For sorted arrays, jumps ahead by fixed steps instead of checking every element.
 //                   Once a block where the target could be is found, it performs a linear search within that block.
 //                   Optimal step size: √n
@@ -9,7 +17,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SearchTests
+namespace AlgorithmsLibrary.Searching
 {
     public static class JumpSearch
     {

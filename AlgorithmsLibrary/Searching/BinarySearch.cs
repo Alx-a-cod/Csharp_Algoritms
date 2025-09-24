@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Searching;
+using Xunit;
+
+// ======================================================
 // Description:      Efficient search for sorted arrays.
 //                   Repeatedly divides the search interval in half.
 //
@@ -8,7 +16,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SearchTests
+namespace AlgorithmsLibrary.Searching
 {
     public static class BinarySearch
     {

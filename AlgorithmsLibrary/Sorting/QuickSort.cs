@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 //
 // Description:      Divide and conquer using a “pivot” element.
 //                   Partitions array into elements smaller/larger than pivot, then recursively sorts partitions.
@@ -9,7 +17,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class QuickSort
     {

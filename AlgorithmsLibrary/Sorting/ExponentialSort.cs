@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 // Description:      Efficient for unbounded or very large sorted arrays.
 //                   Combines exponential search to find range + binary search within that range.
 // Time complexity:  O(log n)
@@ -7,7 +15,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class ExponentialSearch
     {

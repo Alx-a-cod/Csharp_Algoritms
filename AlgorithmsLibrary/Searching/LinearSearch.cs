@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Searching;
+using Xunit;
+
+// ======================================================
 // Description:      Simple search algorithm that scans each element until the target is found..
 //                   Works for unsorted arrays.
 // Time complexity:  O(n)
@@ -7,7 +15,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SearchTests
+namespace AlgorithmsLibrary.Searching
 {
     public static class LinearSearch
     {

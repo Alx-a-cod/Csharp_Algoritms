@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Sorting;
+using Xunit;
+
+// ======================================================
 // Description:       Uses a binary heap data structure to sort an array.
 //                    Steps:
 //                        1. Build a max-heap from the array.
@@ -12,7 +20,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SortTests
+namespace AlgorithmsLibrary.Sorting
 {
     public static class HeapSort
     {

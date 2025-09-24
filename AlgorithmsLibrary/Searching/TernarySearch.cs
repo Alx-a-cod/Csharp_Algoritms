@@ -1,4 +1,12 @@
-﻿// ======================================================
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AlgorithmsLibrary.Searching;
+using Xunit;
+
+// ======================================================
 // Description:      Similar to binary search but splits array into three parts.
 //                   Rarely used in practice but very cool academically speaking. It's a rule of THIRDS!:D.
 //                   Works only on sorted arrays.
@@ -9,7 +17,7 @@
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.SearchTests
+namespace AlgorithmsLibrary.Searching
 {
     public static class TernarySearch
     {
