@@ -50,17 +50,19 @@ namespace AlgorithmsLibrary.SortingTests
             Assert.Equal(new[] { 1, 2, 3, 4, 5 }, arr);
         }
 
+
         [Fact]
         public void ArrayWithDuplicates_SortsCorrectly_Stable()
         {
             (int val, int id)[] arr = { (3, 1), (1, 2), (2, 3), (3, 4), (2, 5) };
-            int[] values = Array.ConvertAll(arr, x => x.val);
 
-            BubbleSort.Sort(values);
-
-            Assert.Equal(new[] { 1, 2, 2, 3, 3 }, values);
-            // Stability: ensure relative order of duplicates is preserved
-            Assert.Equal(3, arr[2].val); // just an example of checking original array IDs if needed
+            BubbleSort.Sort(arr);
+            Assert.Equal(new[] { 1, 2, 2, 3, 3 }, Array.ConvertAll(arr, x => x.val));
+            Assert.Equal(2, arr[0].id); // the 1 comes from id=2
+            Assert.Equal(3, arr[1].id); // first '2'
+            Assert.Equal(5, arr[2].id); // second '2'
+            Assert.Equal(1, arr[3].id); // first '3'
+            Assert.Equal(4, arr[4].id); // second '3'
         }
 
         [Fact]

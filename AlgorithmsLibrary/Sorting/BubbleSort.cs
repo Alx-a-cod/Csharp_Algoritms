@@ -21,20 +21,16 @@ namespace AlgorithmsLibrary.Sorting
 {
     public static class BubbleSort
     {
+        // Sort int[] arrays
         public static void Sort(int[] array)
         {
-            int n = array.Length; // <---- get the size of the array
-
-            // Outer loop: number of passes
-            for (int i = 0; i < n - 1; i++) // <---- n-1 passes are needed to guarantee full sort
+            int n = array.Length;
+            for (int i = 0; i < n - 1; i++)
             {
-                // Inner loop: comparing adjacent elements
-                for (int j = 0; j < n - i - 1; j++) // <---- compares each adjacent pair, and stops earlier each pass
-                                                    // because last i elements are already sorted.
+                for (int j = 0; j < n - i - 1; j++)
                 {
-                    if (array[j] > array[j + 1]) // <---- if the current element is greater than the next, check if swaps is needed
+                    if (array[j] > array[j + 1])
                     {
-                        // Swap if the current element is greater than next, using temporary variable
                         int temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
@@ -42,5 +38,43 @@ namespace AlgorithmsLibrary.Sorting
                 }
             }
         }
+
+        // Sort tuple arrays for stability
+        public static void Sort((int val, int id)[] arr)
+        {
+            int n = arr.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = 0; j < n - i - 1; j++)
+                {
+                    if (arr[j].val > arr[j + 1].val)
+                    {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+        }
     }
 }
+
+
+//also single method working for any type: 
+
+//public static void Sort<T>(T[] array, Func<T, int> keySelector)
+//{
+//    int n = array.Length;
+//    for (int i = 0; i < n - 1; i++)
+//    {
+//        for (int j = 0; j < n - i - 1; j++)
+//        {
+//            if (keySelector(array[j]) > keySelector(array[j + 1]))
+//            {
+//                var temp = array[j];
+//                array[j] = array[j + 1];
+//                array[j + 1] = temp;
+//            }
+//        }
+//    }
+//}
