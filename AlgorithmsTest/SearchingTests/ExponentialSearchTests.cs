@@ -1,4 +1,4 @@
-﻿using AlgorithmsLibrary.Sorting;
+﻿using AlgorithmsLibrary.Searching;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +27,7 @@ using System.Threading.Tasks;
 // ======================================================
 
 
-namespace AlgorithmsLibrary.Tests
+namespace AlgorithmsTest.SearchingTests
     {
         public class ExponentialSearchTests
         {

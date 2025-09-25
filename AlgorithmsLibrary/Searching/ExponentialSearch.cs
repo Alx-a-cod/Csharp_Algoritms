@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AlgorithmsLibrary.Sorting;
 using Xunit;
-
+using AlgorithmsLibrary.Searching;
 // ======================================================
 // Description:      Efficient for unbounded or very large sorted arrays.
 //                   Combines exponential search to find range + binary search within that range.
@@ -15,7 +14,7 @@ using Xunit;
 //
 // ======================================================
 
-namespace AlgorithmsLibrary.Sorting
+namespace AlgorithmsLibrary.Searching
 {
     public static class ExponentialSearch
     {
