@@ -1,11 +1,11 @@
-# 🧩 C# Algorithms Library
+# 🧩 C# Algorithms Library ⋅⋆───⛧ 
 
  **Plug, Play & Learn** – A modular, ready-to-use collection of algorithms and data structures in C#, with a runner and unit tests. Perfect for learning, practicing, or referencing.   
 `Mostly referencing, let's be honest about it.`
 
 ---
 
-#### 📍 Overview
+#### 📍 Overview ──   
 
 This project is a **C# algorithms playground** designed for developers, students, and enthusiasts who want a structured, modular, and ready-to-run library of algorithms.  
 
@@ -20,7 +20,7 @@ It includes:
 
 ---
 
-#### 📍 Core Features
+#### 📍 Core Features ──   
 
 - Modular folder structure for easy navigation  
 - Ready-to-use `.cs` files for each algorithm  
@@ -31,7 +31,7 @@ It includes:
 
 ---
 
-#### 📍 Architecture
+#### 📍 Architecture ──   
 
 - **AlgorithmsLibrary (Class Library)** – Modular `.cs` files, one per algorithm  
 - **AlgorithmsRunner (Console App)** – Test and demonstrate algorithms easily  
@@ -41,7 +41,7 @@ All components are **loosely coupled**, making it easy to expand or integrate in
 
 ---
 
-#### 📍 Algorithm Categories
+#### 📍 Algorithm Categories ──   
 
 ##### 📘 Beginner (Fundamentals)
 
@@ -88,7 +88,7 @@ All components are **loosely coupled**, making it easy to expand or integrate in
 - Trie (Prefix Tree)  
 - Union-Find (Disjoint Set)  
 
-##### 📕 Expert (I want to cry)
+##### 📕 Expert (I want to cry)  
 
 - Segment Trees (with Lazy Propagation)  
 - Fenwick Tree (Binary Indexed Tree)  
@@ -104,7 +104,7 @@ All components are **loosely coupled**, making it easy to expand or integrate in
 
 ---
 
-## 📍 Folder Organization & Algorithms
+## 📍 Folder Organization & Algorithms ──   
 
 This tree shows the **solution, projects, folders**, and all algorithms organized by category:
 
@@ -212,7 +212,7 @@ AlgorithmsLibrary.sln
 ```
 ---
 
-#### 📍 Tech Stack
+#### 📍 Tech Stack ──     
 
 - **Language:** C# 
 - **IDE:** Visual Studio 2022 / VS Code  
@@ -221,7 +221,7 @@ AlgorithmsLibrary.sln
 
 ---
 
-#### 📍 Progress Status
+#### 📍 Progress Status ──   
 
 | Category | Status |
 |----------|--------|
@@ -232,7 +232,7 @@ AlgorithmsLibrary.sln
 
 ---
 
-#### ✨ Contribution
+#### ✨ Contribution ──   
 
 Contributions are welcome!
 
@@ -243,6 +243,6 @@ Contributions are welcome!
 
 ---
 
-🔖 ###### License: Apache-2.0 License
-
+🔖 ###### License ──   
+Apache 2.0 License
 
