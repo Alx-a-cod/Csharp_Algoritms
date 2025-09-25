@@ -243,6 +243,6 @@ Contributions are welcome!
 
 ---
 
-🔖 ###### License: Apache-2.0 Licence
+🔖 ###### License: Apache-2.0 License
 
 
