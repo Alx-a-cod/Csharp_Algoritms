@@ -156,7 +156,7 @@ AlgorithmsLibrary.sln
 │   │   └── PriorityQueue.cs              # 📗 Intermediate
 │   │
 │   ├── DynamicProgramming
-│   │   ├── FibonacciDP.cs               # 📗 Intermediate
+│   │   ├── FibonacciDP.cs                # 📗 Intermediate
 │   │   ├── Knapsack01.cs                 # 📗 Intermediate
 │   │   └── CoinChange.cs                 # 📗 Intermediate
 │   │
@@ -168,26 +168,26 @@ AlgorithmsLibrary.sln
 │   │   ├── GraphRepresentation.cs        # 📙 Advanced
 │   │   ├── DFS.cs                        # 📙 Advanced
 │   │   ├── BFS.cs                        # 📙 Advanced
-│   │   ├── Dijkstra.cs                    # 📙 Advanced
-│   │   ├── BellmanFord.cs                 # 📙 Advanced
-│   │   ├── FloydWarshall.cs               # 📙 Advanced
-│   │   ├── AStar.cs                       # 📙 Advanced
-│   │   ├── KruskalMST.cs                  # 📙 Advanced
-│   │   ├── PrimMST.cs                     # 📙 Advanced
-│   │   ├── TopologicalSort.cs             # 📙 Advanced
-│   │   ├── KahnAlgorithm.cs               # 📙 Advanced
-│   │   ├── TarjanSCC.cs                   # 📙 Advanced
-│   │   └── UnionFind.cs                   # 📙 Advanced
+│   │   ├── Dijkstra.cs                   # 📙 Advanced
+│   │   ├── BellmanFord.cs                # 📙 Advanced
+│   │   ├── FloydWarshall.cs              # 📙 Advanced
+│   │   ├── AStar.cs                      # 📙 Advanced
+│   │   ├── KruskalMST.cs                 # 📙 Advanced
+│   │   ├── PrimMST.cs                    # 📙 Advanced
+│   │   ├── TopologicalSort.cs            # 📙 Advanced
+│   │   ├── KahnAlgorithm.cs              # 📙 Advanced
+│   │   ├── TarjanSCC.cs                  # 📙 Advanced
+│   │   └── UnionFind.cs                  # 📙 Advanced
 │   │
 │   ├── Strings
-│   │   ├── KMP.cs                         # 📙 Advanced
-│   │   ├── RabinKarp.cs                   # 📙 Advanced
-│   │   └── Trie.cs                        # 📙 Advanced
+│   │   ├── KMP.cs                        # 📙 Advanced
+│   │   ├── RabinKarp.cs                  # 📙 Advanced
+│   │   └── Trie.cs                       # 📙 Advanced
 │   │
 │   ├── Cryptography
-│   │   ├── RSA.cs                          # 📕 Expert
-│   │   ├── EllipticCurveBasics.cs          # 📕 Expert
-│   │   └── MillerRabinPrimalityTest.cs     # 📕 Expert
+│   │   ├── RSA.cs                        # 📕 Expert
+│   │   ├── EllipticCurveBasics.cs        # 📕 Expert
+│   │   └── MillerRabinPrimalityTest.cs   # 📕 Expert
 │   │
 │   └── Advanced
 │       ├── SegmentTree.cs                  # 📕 Expert
